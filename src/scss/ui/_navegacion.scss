@@ -1,0 +1,31 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+/* Navegacion
+----------------------------------------------------------*/
+.navegacion{
+    padding: .3rem 0;
+    margin: 5rem 0;
+    background-color: v.$primario;
+    @include m.tablet{
+        margin: 2rem 0;
+    }
+    &__contenido{
+        border-block: 2px dashed v.$blanco; //logical property border-block = border-top + border-bottom
+        padding: 1rem 0;
+    }
+    &__list{
+        @include m.tablet{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__item{
+        line-height: 1.7;
+        text-align: center;
+    }
+    &__enlace{
+        color: v.$blanco;
+        font-size: 2.4rem;
+    }
+}

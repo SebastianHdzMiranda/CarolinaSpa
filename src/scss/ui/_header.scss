@@ -1,0 +1,21 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+/* Header
+----------------------------------------------------------*/
+.header{
+    padding-top: 5rem;
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;  
+        align-items: center; 
+    }
+    &__logo{
+        padding-bottom: 3rem;
+        margin: 0 auto;
+
+        @include m.tablet{
+            padding-bottom: unset;
+        }
+    }
+}

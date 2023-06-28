@@ -1,0 +1,48 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+/* Bienvenida
+----------------------------------------------------------*/
+.servicios{
+    // padding: 5rem 0;
+    &__grid{
+        @include m.tablet{
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+.card{
+    margin-bottom: 4rem;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    &__imgContainer{
+        background-color: v.$blanco;
+        padding: .5rem;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.1) rotate(7deg);
+        }
+    }
+    &__info{
+        background-color: v.$blanco;
+        text-align: center;
+        width: 90%;
+        margin: -5rem auto 0 auto;
+        position: relative;
+    }
+    &__heading{
+        @include m.headingCursiva();
+        padding: 2rem 0;
+        margin: 0;
+        font-size: 3.5rem;
+    }
+    &__span{
+        font-size: 3.5rem;
+    }
+    &__btn{
+        @include m.boton(v.$secundario, v.$blanco);
+        display: block;
+    }
+
+}

@@ -1,0 +1,43 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+/* Sociales
+----------------------------------------------------------*/
+.sociales{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    &__enlace{
+        &::before{
+            content: '';
+            // width: 4rem;
+            // height: 4rem;
+            padding: 2rem;
+            display: inline-block;
+        }
+        
+        &[href*="facebook.com"]::before{
+            background-image: url(../img/icono_facebook.svg);
+        }
+        &[href*="twitter.com"]::before{
+            background-image: url(../img/icono_twitter.svg);
+        }
+        &[href*="instagram.com"]::before{
+            background-image: url(../img/icono_instagram.svg);
+        }
+        &[href*="youtube.com"]::before{
+            background-image: url(../img/icono_youtube.svg);
+        }
+        &[href*="tiktok.com"]::before{
+            background-image: url(../img/icono_tiktok.svg);
+        }
+    }
+
+    &__accesible{ //ocultar un elemento sin quitarle su display 
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        display: block;
+    }
+}

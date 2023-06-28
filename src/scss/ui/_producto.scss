@@ -1,0 +1,48 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.productos{
+    .productos__heading{
+        text-align: center;
+        @include m.headingCursiva();
+    }
+    .productos__grid{
+        @include m.tablet{
+            @include m.grid(4, 2rem);
+        }
+    }
+}
+.producto{
+    background-color: v.$blanco;
+    .producto__imgContainer{
+        overflow: hidden;
+    }
+    .producto__img{
+        transition: all .25s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .producto__info{
+        padding: 2rem;
+    }
+    .producto__heading{
+        text-transform: uppercase;
+        color: v.$secundario;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 0;
+    }
+    .producto__description{
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+    .producto__precio{
+        text-align: center;
+        font-size: 2.8rem;
+        margin: 0;
+        color: v.$gris;
+    }
+
+}

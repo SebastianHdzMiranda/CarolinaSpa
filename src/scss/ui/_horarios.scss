@@ -1,0 +1,72 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+/* Horarios
+----------------------------------------------------------*/
+.horarios{
+    padding: 6rem 0;
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // height: 65rem;
+    }
+
+    .horarios__info{
+        background-color: v.$primario;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: v.$blanco;
+        @include m.tablet{
+            padding: 5rem;
+        }
+    }
+    .horarios__heading{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 4rem;
+    }
+    .horarios__descripcion{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .horarios__img{
+        height: 35rem;
+        background-image: url(../img/bg_horarios.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        @include m.tablet{
+            height: auto;
+            background-position: -130rem center;
+        }
+        @include m.desktop{
+            background-position: right center;
+        }
+    }
+}
+.tabla {
+    width: 100%;
+    border: .5rem solid v.$secundario;
+    text-align: center;
+    border-collapse: collapse;
+
+    &__thead {
+        background-color: v.$secundario;
+    }
+    &__th {
+        padding: 2rem;
+    }
+    &__tr {
+        &:hover {
+            background-color: darken(v.$primario, 10%);
+        }
+    }
+    &__td {
+        padding: 1rem;
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina Spa</title>
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <a href="index.html" class="header__link">
+            <img class="header__logo" src="build/img/logo.svg" alt="logo">
+        </a>
+        <nav class="sociales">
+            <a href="https://www.facebook.com/miranda.cruz.9849" target="_blank" class="sociales__enlace">
+                <span class="sociales__accesible">Facebook</span>
+            </a>
+            <a href="https://twitter.com/?lang=es" target="_blank" href="#" class="sociales__enlace">
+                <span class="sociales__accesible">Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" href="#" class="sociales__enlace">
+                <span class="sociales__accesible">Instagram</span>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" href="#" class="sociales__enlace">
+                <span class="sociales__accesible">Youtube</span>
+            </a>
+            <a href="https://www.tiktok.com/es/" target="_blank" href="#" class="sociales__enlace">
+                <span class="sociales__accesible">Tiktok</span>
+            </a>
+        </nav>
+    </header>
+    
+    <nav class="navegacion">
+
+        <div class="navegacion__contenido">
+            <ul class="navegacion__list contenedor">
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace">Inicio</a>
+                </li>
+                <li class="navegacion__item ">
+                    <a href="#" class="navegacion__enlace">Nosotros</a>
+                </li>
+                <li class="navegacion__item ">
+                    <a href="#" class="navegacion__enlace">Servicios</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace">Productos</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="slider">
+        <ul class="slider__list contenedor">
+            <li class="slider__item">
+                <picture>
+                    <source srcset="build/img/slide_01.avif" type="image/avif">
+                    <source srcset="build/img/slide_01.webp" type="image/webp">
+                    <source srcset="build/img/slide_01.jpg" type="image/jpg">
+                    <img loading="lazy" src="build/img/slide_01.jpg" width="500" height="300" alt="slider">
+                </picture>
+            </li>
+            <!-- <li class="slider__item">
+                <picture>
+                    <source srcset="build/img/slide_02.avif" type="image/avif">
+                    <source srcset="build/img/slide_02.webp" type="image/webp">
+                    <source srcset="build/img/slide_02.jpg" type="image/jpg">
+                    <img loading="lazy" src="build/img/slide_02.jpg" width="500" height="300" alt="slider">
+                </picture>
+            </li>
+            <li class="slider__item">
+                <picture>
+                    <source srcset="build/img/slide_03.avif" type="image/avif">
+                    <source srcset="build/img/slide_03.webp" type="image/webp">
+                    <source srcset="build/img/slide_03.jpg" type="image/jpg">
+                    <img loading="lazy" src="build/img/slide_03.jpg" width="500" height="300" alt="slider">
+                </picture>
+            </li> -->
+        </ul>
+    </section>
+
+    <section class="bienvenida seccion">
+        <h1 class="bienvenida__heading">bienvenida(o) a nuestro <span class="bienvenida__span">sitio web</span></h1>
+        <p class="bienvenida__texto">Te sentirás como nueva(o) con nuestros masajistas profesionales</p>
+    </section>
+
+    <section class="servicios contenedor">
+        <div class="servicios__grid">
+            
+            <div class="card">
+                <div class="card__imgContainer">
+                    <img src="build/img/servicio_01.jpg" alt="imagen card" class="card__image">
+                </div>
+
+                <div class="card__info">
+                    <h3 class="card__heading">Conoce sobre <span class="card__span">Nosotros</span></h3>
+                    <a href="#" class="card__btn">Leer Más</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card__imgContainer">
+                    <img src="build/img/servicio_02.jpg" alt="imagen card" class="card__image">
+                </div>
+
+                <div class="card__info">
+                    <h3 class="card__heading">Nuestros <span class="card__span">Servicios</span></h3>
+                    <a href="#" class="card__btn">Leer Más</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card__imgContainer">
+                    <img src="build/img/servicio_03.jpg" alt="imagen card" class="card__image">
+                </div>
+
+                <div class="card__info">
+                    <h3 class="card__heading">Vísita nuestra <span class="card__span">Tienda</span></h3>
+                    <a href="#" class="card__btn">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="horarios">
+        <div class="horarios__info">
+            <h2 class="horarios__heading">Horarios</h2>
+
+            <p class="horarios__descripcion">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil optio, maxime, deleniti aperiam atque in praesentium suscipit autem minus aliquam molestias eos, adipisci vero id enim doloribus ex rem delectus.
+            </p>
+
+            <table class="tabla">
+                <thead class="tabla__thead">
+                    <tr>
+                        <th class="tabla__th">Día</th>
+                        <th class="tabla__th">De</th>
+                        <th class="tabla__th">Hasta</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tabla__tbody">
+                    <tr class="tabla__tr">
+                        <td class="tabla__td">Lunes</td>
+                        <td class="tabla__td">09:00</td>
+                        <td class="tabla__td">19:00</td>
+                    </tr>
+
+                    <tr class="tabla__tr">
+                        <td class="tabla__td">Martes</td>
+                        <td class="tabla__td">09:00</td>
+                        <td class="tabla__td">19:00</td>
+                    </tr>
+
+                    <tr class="tabla__tr">
+                        <td class="tabla__td">Miércoles</td>
+                        <td class="tabla__td">09:00</td>
+                        <td class="tabla__td">19:00</td>
+                    </tr>
+
+                    <tr class="tabla__tr">
+                        <td class="tabla__td">Jueves</td>
+                        <td class="tabla__td">09:00</td>
+                        <td class="tabla__td">19:00</td>
+                    </tr>
+
+                    <tr class="tabla__tr">
+                        <td class="tabla__td">Viernes</td>
+                        <td class="tabla__td">09:00</td>
+                        <td class="tabla__td">19:00</td>
+                    </tr>
+
+                    <tr class="tabla__tr">
+                        <td class="tabla__td">Sábado</td>
+                        <td class="tabla__td">09:00</td>
+                        <td class="tabla__td">14:00</td>
+                    </tr>
+
+                    <tr class="tabla__tr">
+                        <td class="tabla__td">Domingo</td>
+                        <td class="tabla__td" colspan="2">Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="horarios__img">
+
+        </div>
+    </section>
+
+    <section class="productos contenedor">
+        <h2 class="productos__heading">Nuestros <span class="productos__span">Productos</span></h2>
+
+        <div class="productos__grid">
+            
+            <div class="producto">
+                <div class="producto__imgContainer">
+                    <img src="build/img/producto_01.jpg" alt="producto" class="producto__img">
+                </div>
+                <div class="producto__info">
+                    <h3 class="producto__heading">Producto 1</h3>
+                    <p class="producto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eveniet neque</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto__imgContainer">
+                    <img src="build/img/producto_02.jpg" alt="producto" class="producto__img">
+                </div>
+                <div class="producto__info">
+                    <h3 class="producto__heading">Producto 2</h3>
+                    <p class="producto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eveniet neque</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto__imgContainer">
+                    <img src="build/img/producto_03.jpg" alt="producto" class="producto__img">
+                </div>
+                <div class="producto__info">
+                    <h3 class="producto__heading">Producto 3</h3>
+                    <p class="producto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eveniet neque</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto__imgContainer">
+                    <img src="build/img/producto_04.jpg" alt="producto" class="producto__img">
+                </div>
+                <div class="producto__info">
+                    <h3 class="producto__heading">Producto 4</h3>
+                    <p class="producto__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eveniet neque</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
