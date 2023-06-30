@@ -4,14 +4,14 @@
 /* Horarios
 ----------------------------------------------------------*/
 .horarios{
-    padding: 6rem 0;
+    // padding: 6rem 0;
     @include m.tablet{
         display: grid;
         grid-template-columns: 1fr 1fr;
         // height: 65rem;
     }
 
-    .horarios__info{
+    &__info{
         background-color: v.$primario;
         padding: 2rem;
         display: flex;
@@ -23,17 +23,17 @@
             padding: 5rem;
         }
     }
-    .horarios__heading{
+    &__heading{
         text-transform: uppercase;
         font-weight: 400;
         font-size: 4rem;
     }
-    .horarios__descripcion{
+    &__descripcion{
         text-align: center;
         font-size: 2rem;
         line-height: 2;
     }
-    .horarios__img{
+    &__img{
         height: 35rem;
         background-image: url(../img/bg_horarios.jpg);
         background-repeat: no-repeat;
@@ -52,7 +52,7 @@
     width: 100%;
     border: .5rem solid v.$secundario;
     text-align: center;
-    border-collapse: collapse;
+    border-collapse: collapse; //elimina los bordes en cada celda
 
     &__thead {
         background-color: v.$secundario;

@@ -1,44 +1,53 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
+/* Productos
+----------------------------------------------------------*/
 .productos{
-    .productos__heading{
+    &__heading{
         text-align: center;
-        @include m.headingCursiva();
+        @include m.headingCursiva;
     }
-    .productos__grid{
+    &__grid{
+        @include m.grid(1, 2rem);
         @include m.tablet{
+            @include m.grid(2, 2rem);
+        }
+        @include m.desktop{
             @include m.grid(4, 2rem);
         }
     }
 }
 .producto{
-    background-color: v.$blanco;
-    .producto__imgContainer{
+    &__imgContainer{
         overflow: hidden;
     }
-    .producto__img{
-        transition: all .25s ease;
+    &__img{
+        // transition: all .25s ease;
+        transition-property: transform;
+        transition-duration: 250ms;
         &:hover{
             transform: scale(1.2);
         }
     }
-    .producto__info{
+    &__info{
+        background-color: v.$blanco;
         padding: 2rem;
     }
-    .producto__heading{
+    &__heading{
         text-transform: uppercase;
         color: v.$secundario;
         text-align: center;
         font-weight: 400;
         margin-top: 0;
     }
-    .producto__description{
+    &__description{
         text-transform: uppercase;
         font-size: 1.6rem;
         line-height: 1.8;
+        text-align: center;
     }
-    .producto__precio{
+    &__precio{
         text-align: center;
         font-size: 2.8rem;
         margin: 0;

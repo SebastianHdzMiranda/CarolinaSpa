@@ -6,30 +6,31 @@
 .servicios{
     // padding: 5rem 0;
     &__grid{
+        width: 85%;
+        margin: 0 auto;
         @include m.tablet{
+            width: 100%;
+            margin: unset;
             @include m.grid(3, 2rem);
         }
     }
 }
 .card{
-    margin-bottom: 4rem;
-    &:last-of-type{
-        margin-bottom: 0;
-    }
     &__imgContainer{
         background-color: v.$blanco;
         padding: .5rem;
-        transition: all .3s ease;
+        transition-property: rotate scale;
+        transition-duration: 300ms;
         &:hover{
             transform: scale(1.1) rotate(7deg);
         }
     }
     &__info{
+        max-width: 90%;
+        margin: 0 auto;
         background-color: v.$blanco;
         text-align: center;
-        width: 90%;
-        margin: -5rem auto 0 auto;
-        position: relative;
+        transform: translateY(-5rem);
     }
     &__heading{
         @include m.headingCursiva();

@@ -1,0 +1,2 @@
+# translateX y translateY 
+    se utilizan para aplicar transformaciones de desplazamiento horizontal y vertical a un elemento. Estas propiedades permiten mover un elemento a lo largo de los ejes X e Y respectivamente, sin alterar su flujo normal en el documento. En resumen, las transformaciones con translateX y translateY te permiten mover elementos visualmente sin cambiar su posición en el flujo normal de la página web, lo que te brinda flexibilidad para crear diseños y animaciones interesantes.

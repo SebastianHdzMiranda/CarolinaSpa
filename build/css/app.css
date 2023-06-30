@@ -22,7 +22,7 @@ p {
 
 [class$=contenedor],
 .contenedor {
-  width: 95%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -237,35 +237,37 @@ a {
 
 /* Bienvenida
 ----------------------------------------------------------*/
+.servicios__grid {
+  width: 85%;
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   .servicios__grid {
+    width: 100%;
+    margin: unset;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.card {
-  margin-bottom: 4rem;
-}
-.card:last-of-type {
-  margin-bottom: 0;
-}
 .card__imgContainer {
   background-color: #FFFFFF;
   padding: 0.5rem;
-  transition: all 0.3s ease;
+  transition-property: rotate scale;
+  transition-duration: 300ms;
 }
 .card__imgContainer:hover {
   -webkit-transform: scale(1.1) rotate(7deg);
           transform: scale(1.1) rotate(7deg);
 }
 .card__info {
+  max-width: 90%;
+  margin: 0 auto;
   background-color: #FFFFFF;
   text-align: center;
-  width: 90%;
-  margin: -5rem auto 0 auto;
-  position: relative;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
 }
 .card__heading {
   color: #e082a8;
@@ -316,16 +318,13 @@ a {
 
 /* Horarios
 ----------------------------------------------------------*/
-.horarios {
-  padding: 6rem 0;
-}
 @media (min-width: 768px) {
   .horarios {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
-.horarios .horarios__info {
+.horarios__info {
   background-color: #8ed3cc;
   padding: 2rem;
   display: flex;
@@ -335,21 +334,21 @@ a {
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
-  .horarios .horarios__info {
+  .horarios__info {
     padding: 5rem;
   }
 }
-.horarios .horarios__heading {
+.horarios__heading {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4rem;
 }
-.horarios .horarios__descripcion {
+.horarios__descripcion {
   text-align: center;
   font-size: 2rem;
   line-height: 2;
 }
-.horarios .horarios__img {
+.horarios__img {
   height: 35rem;
   background-image: url(../img/bg_horarios.jpg);
   background-repeat: no-repeat;
@@ -357,13 +356,13 @@ a {
   background-position: right center;
 }
 @media (min-width: 768px) {
-  .horarios .horarios__img {
+  .horarios__img {
     height: auto;
     background-position: -130rem center;
   }
 }
 @media (min-width: 1024px) {
-  .horarios .horarios__img {
+  .horarios__img {
     background-position: right center;
   }
 }
@@ -388,7 +387,9 @@ a {
   font-size: 2.2rem;
 }
 
-.productos .productos__heading {
+/* Productos
+----------------------------------------------------------*/
+.productos__heading {
   text-align: center;
   color: #e082a8;
   font-family: "Italianno", sans-serif;
@@ -398,7 +399,7 @@ a {
   margin-bottom: 4rem;
   font-size: 4rem;
 }
-.productos .productos__heading > * {
+.productos__heading > * {
   display: block;
   font-weight: 300;
   font-size: 4rem;
@@ -406,46 +407,113 @@ a {
   text-transform: uppercase;
   color: initial;
 }
+.productos__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
 @media (min-width: 768px) {
-  .productos .productos__grid {
+  .productos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .productos__grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.producto {
-  background-color: #FFFFFF;
-}
-.producto .producto__imgContainer {
+.producto__imgContainer {
   overflow: hidden;
 }
-.producto .producto__img {
-  transition: all 0.25s ease;
+.producto__img {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 250ms;
 }
-.producto .producto__img:hover {
+.producto__img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.producto .producto__info {
+.producto__info {
+  background-color: #FFFFFF;
   padding: 2rem;
 }
-.producto .producto__heading {
+.producto__heading {
   text-transform: uppercase;
   color: #e082a8;
   text-align: center;
   font-weight: 400;
   margin-top: 0;
 }
-.producto .producto__description {
+.producto__description {
   text-transform: uppercase;
   font-size: 1.6rem;
   line-height: 1.8;
+  text-align: center;
 }
-.producto .producto__precio {
+.producto__precio {
   text-align: center;
   font-size: 2.8rem;
   margin: 0;
   color: #979797;
+}
+
+/* Cita
+----------------------------------------------------------*/
+.cita {
+  text-align: center;
+  background-image: url(../img/bg_citas.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+.cita__heading, .cita__texto {
+  color: #FFFFFF;
+}
+.cita__heading {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 400;
+}
+.cita__texto {
+  line-height: 2;
+  margin: 0 auto;
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .cita__texto {
+    width: 60rem;
+  }
+}
+.cita__btn {
+  background-color: #8ed3cc;
+  padding: 2rem 2rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color;
+  transition-duration: 300ms;
+  padding-inline: 10rem;
+}
+@media (min-width: 768px) {
+  .cita__btn {
+    width: auto;
+  }
+}
+.cita__btn:hover {
+  background-color: #69c5bb;
 }
 /*# sourceMappingURL=app.css.map */
