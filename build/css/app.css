@@ -205,6 +205,38 @@ a {
   font-size: 2.4rem;
 }
 
+.swiper .swiper-wrapper {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.swiper .swiper-wrapper:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  display: none;
+}
+@media (min-width: 768px) {
+  .swiper .swiper-button-prev::after,
+  .swiper .swiper-button-next::after {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 3rem;
+  }
+}
+.swiper .swiper-pagination-bullet {
+  background-color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .swiper .swiper-pagination-bullet {
+    display: none;
+  }
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+}
+
 /* Bienvenida
 ----------------------------------------------------------*/
 .bienvenida {
@@ -515,5 +547,52 @@ a {
 }
 .cita__btn:hover {
   background-color: #69c5bb;
+}
+
+/* Footer
+----------------------------------------------------------*/
+.footer__grid {
+  padding: 5rem 0 2rem 0;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__seccion {
+    margin-bottom: 0;
+  }
+}
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3.4rem;
+}
+.footer__texto {
+  line-height: 1.8;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #d7d7d7;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.copyright__texto {
+  padding: 2rem;
+  color: #979797;
+  margin: 0;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=app.css.map */

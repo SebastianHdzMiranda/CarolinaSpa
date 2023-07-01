@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
@@ -58,33 +59,21 @@
         </div>
     </nav>
 
-    <section class="slider">
-        <ul class="slider__list contenedor">
-            <li class="slider__item">
-                <picture>
-                    <source srcset="build/img/slide_01.avif" type="image/avif">
-                    <source srcset="build/img/slide_01.webp" type="image/webp">
-                    <source srcset="build/img/slide_01.jpg" type="image/jpg">
-                    <img loading="lazy" src="build/img/slide_01.jpg" width="500" height="300" alt="slider">
-                </picture>
-            </li>
-            <!-- <li class="slider__item">
-                <picture>
-                    <source srcset="build/img/slide_02.avif" type="image/avif">
-                    <source srcset="build/img/slide_02.webp" type="image/webp">
-                    <source srcset="build/img/slide_02.jpg" type="image/jpg">
-                    <img loading="lazy" src="build/img/slide_02.jpg" width="500" height="300" alt="slider">
-                </picture>
-            </li>
-            <li class="slider__item">
-                <picture>
-                    <source srcset="build/img/slide_03.avif" type="image/avif">
-                    <source srcset="build/img/slide_03.webp" type="image/webp">
-                    <source srcset="build/img/slide_03.jpg" type="image/jpg">
-                    <img loading="lazy" src="build/img/slide_03.jpg" width="500" height="300" alt="slider">
-                </picture>
-            </li> -->
-        </ul>
+    <section class="swiper mySwiper contenedor">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="build/img/slide_01.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="build/img/slide_02.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="build/img/slide_03.jpg">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </section>
 
     <section class="bienvenida seccion">
@@ -261,12 +250,42 @@
             </div>
             <div class="footer__seccion">
                 <h3 class="footer__heading">Horario</h3>
+                <p class="footer__texto">Lun-Vie: 9AM - 7PM</p>
+                <p class="footer__texto">Sábado: 9AM - 2PM</p>
+                <p class="footer__texto">Domingo: Cerrado</p>
             </div>
             <div class="footer__seccion">
                 <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Av. Revolución 1818</p>
+
+                <nav class="sociales">
+                    <a href="https://www.facebook.com/miranda.cruz.9849" target="_blank" class="sociales__enlace">
+                        <span class="sociales__accesible">Facebook</span>
+                    </a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" href="#" class="sociales__enlace">
+                        <span class="sociales__accesible">Twitter</span>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" href="#" class="sociales__enlace">
+                        <span class="sociales__accesible">Instagram</span>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" href="#" class="sociales__enlace">
+                        <span class="sociales__accesible">Youtube</span>
+                    </a>
+                    <a href="https://www.tiktok.com/es/" target="_blank" href="#" class="sociales__enlace">
+                        <span class="sociales__accesible">Tiktok</span>
+                    </a>
+                </nav>
             </div>
         </div>
+        <div class="copyright">
+            <p class="copyright__texto">
+                &copy; Carolina Spa & Salon. Todos los derechos reservados
+            </p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>

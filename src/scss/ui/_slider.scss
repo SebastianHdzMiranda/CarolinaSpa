@@ -1,0 +1,33 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+
+.swiper{
+    .swiper-wrapper{
+        cursor: grab;
+        &:active{
+            cursor: grabbing;
+        }
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+        @include m.tablet {
+            color: v.$blanco;
+            display: inline-block;
+            font-size: 3rem;
+        }
+    }
+    .swiper-pagination-bullet {
+        background-color: v.$blanco;
+
+        @include m.tablet {
+            display: none;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: v.$blanco;
+    }
+    
+}
