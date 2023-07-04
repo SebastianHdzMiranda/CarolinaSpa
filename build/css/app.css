@@ -205,6 +205,13 @@ a {
   font-size: 2.4rem;
 }
 
+@media (min-width: 768px) {
+  .swiper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 .swiper .swiper-wrapper {
   cursor: -webkit-grab;
   cursor: grab;
@@ -237,13 +244,13 @@ a {
   background-color: #FFFFFF;
 }
 .swiper .swiper-img {
-  height: 22rem;
+  min-height: 23rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (min-width: 768px) {
   .swiper .swiper-img {
-    height: unset;
+    min-height: unset;
   }
 }
 

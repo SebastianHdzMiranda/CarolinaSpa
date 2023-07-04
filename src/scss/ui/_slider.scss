@@ -3,6 +3,11 @@
 
 
 .swiper{
+    @include m.tablet{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .swiper-wrapper{
         cursor: grab;
         &:active{
@@ -30,10 +35,10 @@
         background-color: v.$blanco;
     }
     .swiper-img{
-        height: 22rem;
+        min-height: 23rem;
         object-fit: cover;
         @include m.tablet{
-            height: unset;
+            min-height: unset;
         }
     }
 }
