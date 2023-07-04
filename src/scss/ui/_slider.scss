@@ -29,5 +29,11 @@
     .swiper-pagination-bullet-active {
         background-color: v.$blanco;
     }
-    
+    .swiper-img{
+        height: 22rem;
+        object-fit: cover;
+        @include m.tablet{
+            height: unset;
+        }
+    }
 }

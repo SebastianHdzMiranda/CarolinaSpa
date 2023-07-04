@@ -236,6 +236,16 @@ a {
 .swiper .swiper-pagination-bullet-active {
   background-color: #FFFFFF;
 }
+.swiper .swiper-img {
+  height: 22rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .swiper .swiper-img {
+    height: unset;
+  }
+}
 
 /* Bienvenida
 ----------------------------------------------------------*/
