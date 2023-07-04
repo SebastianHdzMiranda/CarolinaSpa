@@ -17,8 +17,11 @@
     }
     &__heading{
         text-transform: uppercase;
-        font-size: 6rem;
+        font-size: 5rem;
         font-weight: 400;
+        @include m.tablet{
+            font-size: 6rem;
+        }
     }
     &__texto{
         line-height: 2;

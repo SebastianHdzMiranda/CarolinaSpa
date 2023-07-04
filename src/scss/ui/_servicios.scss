@@ -39,7 +39,13 @@
         font-size: 3.5rem;
     }
     &__span{
-        font-size: 3.5rem;
+        font-size: 3rem;
+        @include m.tablet{
+            font-size: 2.5rem;
+        }
+        @include m.desktop{
+            font-size: 3.5rem;
+        }
     }
     &__btn{
         @include m.boton(v.$secundario, v.$blanco);
