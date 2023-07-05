@@ -1,31 +1,68 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
-/* Navegacion
-----------------------------------------------------------*/
 .navegacion{
-    padding: .3rem 0;
-    margin: 5rem 0;
-    background-color: v.$primario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: v.$grisClaro;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+    z-index: 3;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
     @include m.tablet{
-        margin: 2rem 0;
-    }
-    &__contenido{
-        border-block: 2px dashed v.$blanco; //logical property border-block = border-top + border-bottom
-        padding: 1rem 0;
-    }
-    &__list{
-        @include m.tablet{
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-    &__item{
-        line-height: 1.7;
-        text-align: center;
+        height: unset;
+        flex-direction: row;
+        gap: 3rem;
+        position: unset;
     }
     &__enlace{
-        color: v.$blanco;
-        font-size: 2.4rem;
+        font-size: 3rem;
+        color: v.$negro;
+        @include m.tablet{
+            font-size: 1.8rem;
+        }
+
+        &--activo{
+            border-bottom: 1px solid v.$negro;
+        }
+        &:nth-child(4){
+            margin-bottom: 15rem;
+            @include m.tablet{
+                margin-bottom: 0;
+            }
+        }
+        &:last-of-type{
+            letter-spacing: 2.5px;
+            color: lighten(v.$beige, 10%);
+            font-size: 3rem;
+            border-bottom: 1px solid v.$beige;
+            padding: 1rem 4rem;
+            transition: all .3s ease;
+            position: absolute;
+            bottom: 22px;
+            &:hover{
+                background-color: v.$beige;
+                color: v.$blanco;
+                border: none;
+            }
+
+            @include m.tablet{
+                position: unset;
+                font-size: 2rem;
+                padding: 1.3rem 2rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+    &--activo{
+        height: calc(100% - 90px);
     }
 }

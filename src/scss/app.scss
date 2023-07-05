@@ -1,2 +1,22 @@
 @use 'bases';
 @use 'ui';
+
+.prueba{
+    
+    padding: 20rem 0;
+}
+
+.texto__van{
+    color: peru;
+    text-align: center;
+    // font-size: 10rem;
+    font-family: 'Vanitas-Extrabold';
+    width: 50%;
+    margin: 0 auto;
+}
+.parrafo__van{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 2;
+    font-weight: 500;
+}

@@ -30,3 +30,26 @@ var swiper = new Swiper(".mySwiper", {
     //     delay: 3000,
     // },
 });
+
+
+const menu  = document.querySelector('#menu');
+console.log(menu);
+
+const nav = document.querySelector('.navegacion')
+console.log(nav);
+
+const body = document.querySelector('body')
+console.log(body);
+
+menu.addEventListener('click', mostrarMenu);
+
+function mostrarMenu(e) {
+  e.preventDefault();
+  if (nav.classList.contains('navegacion--activo')) {
+    nav.classList.remove('navegacion--activo');
+    body.style.overflow = 'auto';
+  } else{
+    nav.classList.add('navegacion--activo');
+    body.style.overflow = 'hidden';
+  }
+}

@@ -20,11 +20,12 @@ body {
 
 p {
     font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
 }
 [class$="contenedor"],
 .contenedor {
-    width: 90%;
-    max-width: 1200px;
+    width: 96%;
+    max-width: 96%;
     margin: 0 auto;
 }
 img {

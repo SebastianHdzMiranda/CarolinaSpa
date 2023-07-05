@@ -3,6 +3,7 @@
 h1, h2, h3 {
     margin: 0;
     line-height: 1.5;
+    font-family: 'Vanitas-Extrabold';
 }
 h1 {
     font-size: 4rem;
@@ -18,4 +19,9 @@ h3 {
 }
 a {
     text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+p {
+    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
 }

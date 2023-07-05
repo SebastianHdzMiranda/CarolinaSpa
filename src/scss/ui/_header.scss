@@ -4,18 +4,37 @@
 /* Header
 ----------------------------------------------------------*/
 .header{
-    padding-top: 5rem;
+    // margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 2rem 0; 
+    width: 96%;
+    max-width: 96%;
+    margin: 0 auto;
     @include m.tablet{
-        display: flex;
-        justify-content: space-between;  
-        align-items: center; 
+        padding: 3rem 0;
+        width: 96%;
+        max-width: 96%;
+        margin: 0 auto;
+        
     }
     &__logo{
-        padding-bottom: 3rem;
-        margin: 0 auto;
-
+        width: 7rem;
+        display: inline;
         @include m.tablet{
+            padding-bottom: 3rem;
+            margin: 0 auto;
             padding-bottom: unset;
+            display: block;
         }
+    }
+    &__iconMenu{
+        @include m.tablet{
+            display: none;
+        }
+    }
+    &__icon{
+        width: 3rem;
     }
 }
