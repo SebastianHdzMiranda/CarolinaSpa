@@ -153,6 +153,7 @@ p {
 }
 @media (min-width: 768px) {
   .header__logo {
+    width: 9.5rem;
     padding-bottom: 3rem;
     margin: 0 auto;
     padding-bottom: unset;

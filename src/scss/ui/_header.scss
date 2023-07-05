@@ -23,6 +23,7 @@
         width: 7rem;
         display: inline;
         @include m.tablet{
+            width: 9.5rem;
             padding-bottom: 3rem;
             margin: 0 auto;
             padding-bottom: unset;
