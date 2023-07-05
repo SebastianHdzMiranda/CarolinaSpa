@@ -1,4 +1,5 @@
 @use 'variables' as v; 
+@use 'mixins' as m; 
 
 /* Globales
 ----------------------------------------------------------*/
@@ -24,9 +25,12 @@ p {
 }
 [class$="contenedor"],
 .contenedor {
-    width: 96%;
+    width: 90%;
     max-width: 96%;
     margin: 0 auto;
+    // @include m.tablet{
+    //     width: 96%;
+    // }
 }
 img {
     max-width: 100%;

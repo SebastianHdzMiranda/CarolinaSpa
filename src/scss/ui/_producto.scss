@@ -4,6 +4,10 @@
 /* Productos
 ----------------------------------------------------------*/
 .productos{
+    width: 80%;
+    @include m.tablet{
+        width: unset;
+    }
     &__heading{
         text-align: center;
         @include m.headingCursiva;

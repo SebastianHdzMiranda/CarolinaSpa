@@ -47,9 +47,11 @@ function mostrarMenu(e) {
   e.preventDefault();
   if (nav.classList.contains('navegacion--activo')) {
     nav.classList.remove('navegacion--activo');
+    menu.classList.remove('is-active');
     body.style.overflow = 'auto';
   } else{
     nav.classList.add('navegacion--activo');
-    body.style.overflow = 'hidden';
+    menu.classList.add('is-active');
+    body.style.overflowY = 'hidden';
   }
 }

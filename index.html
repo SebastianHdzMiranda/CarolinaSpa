@@ -11,18 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="build/css/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
+
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="header__link">
             <img class="header__logo" src="build/img/logo2.png" alt="logo">
         </a>
-        <div class="header__iconMenu">
-            <a id="menu" href="#">
-                <img class="header__icon" src="build/img/menu.svg" alt="menu Icon">
-            </a>
-        </div>
+    
+        <button class="header__iconMenu hamburger hamburger--slider" type="button" id="menu">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>
         <nav class="navegacion">
             <a href="#" target="_blank" class="navegacion__enlace navegacion__enlace--activo">
                 Home
@@ -270,10 +273,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
-
-    <div class="contenedor prueba">
-        <h2 class="texto__van">Empowerment is Beautiful.</h2>
-        <p class="parrafo__van">“Once you experience Juniper you’ll never go anywhere else. It is truly a special gem. Leah and the rest of the team are so kind, giving and meticulous when it comes to serving their guests. I have been a dedicated Juniper client since its inception. Everything is catered to individual needs from customized facials, one of a kind nail artistry to the tea they provide upon arrival. It is a truly relaxing and therapeutic experience unlike any other.”</p>
-    </div>
 </body>
 </html>
