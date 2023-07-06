@@ -11,7 +11,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: 90px;
+    top: 119px;
     bottom: 0;
     z-index: 3;
     height: 0;
@@ -64,6 +64,6 @@
         }
     }
     &--activo{
-        height: calc(100% - 90px);
+        height: calc(100% - 119px);
     }
 }
