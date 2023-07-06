@@ -48,7 +48,7 @@ function mostrarMenu(e) {
   if (nav.classList.contains('navegacion--activo')) {
     nav.classList.remove('navegacion--activo');
     menu.classList.remove('is-active');
-    body.style.overflow = 'auto';
+    body.style.overflowY = 'auto';
   } else{
     nav.classList.add('navegacion--activo');
     menu.classList.add('is-active');

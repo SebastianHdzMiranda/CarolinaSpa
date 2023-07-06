@@ -192,13 +192,14 @@ p {
   .navegacion {
     height: unset;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2.5rem;
     position: unset;
   }
 }
 .navegacion__enlace {
   font-size: 3rem;
-  color: #000;
+  color: #595959;
+  padding-bottom: 0.3rem;
 }
 @media (min-width: 768px) {
   .navegacion__enlace {
@@ -217,7 +218,7 @@ p {
   }
 }
 .navegacion__enlace:last-of-type {
-  letter-spacing: 2.5px;
+  letter-spacing: 1.8px;
   color: #c9aca2;
   font-size: 3rem;
   border-bottom: 1px solid #b68f82;

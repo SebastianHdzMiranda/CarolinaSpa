@@ -20,12 +20,13 @@
     @include m.tablet{
         height: unset;
         flex-direction: row;
-        gap: 3rem;
+        gap: 2.5rem;
         position: unset;
     }
     &__enlace{
         font-size: 3rem;
-        color: v.$negro;
+        color: lighten(v.$negro, 35%); 
+        padding-bottom: .3rem;
         @include m.tablet{
             font-size: 1.8rem;
         }
@@ -40,7 +41,7 @@
             }
         }
         &:last-of-type{
-            letter-spacing: 2.5px;
+            letter-spacing: 1.8px;
             color: lighten(v.$beige, 10%);
             font-size: 3rem;
             border-bottom: 1px solid v.$beige;
