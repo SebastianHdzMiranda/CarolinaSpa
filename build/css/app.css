@@ -135,7 +135,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
   width: 96%;
   max-width: 96%;
   margin: 0 auto;
@@ -148,8 +147,11 @@ p {
     margin: 0 auto;
   }
 }
+.header__link {
+  padding: 0.8rem;
+}
 .header__logo {
-  width: 7rem;
+  width: 6rem;
   display: inline;
 }
 @media (min-width: 768px) {
@@ -182,12 +184,12 @@ p {
   position: fixed;
   left: 0;
   right: 0;
-  top: 119px;
+  top: 68px;
   bottom: 0;
   z-index: 3;
   height: 0;
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: all 0.35s ease;
 }
 @media (min-width: 768px) {
   .navegacion {
@@ -244,7 +246,7 @@ p {
   }
 }
 .navegacion--activo {
-  height: calc(100% - 119px);
+  height: calc(100% - 68px);
 }
 
 @media (min-width: 768px) {
