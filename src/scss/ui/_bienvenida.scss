@@ -5,14 +5,65 @@
 ----------------------------------------------------------*/
 .bienvenida{
     text-align: center;
+    background-image: url(../img/hero.jpg);
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+
+    &::before{
+        content: '';
+        background-color: #fdfaf630;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        
+    }
+    &__contenido{
+        position: relative;
+        padding: 10rem 0;
+        @include m.tablet{
+            padding: 20rem 0;
+        }
+        @include m.desktop{
+            padding: 28rem 0;
+        }
+    }
     &__heading{
-        @include m.headingCursiva();
+        font-weight: 400;
+        margin: 0 auto;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+        color: #000000a8;
+        @include m.tablet{
+            width: 50%;
+            font-size: 5rem;
+        }
     }
     &__texto{
-        font-size: 2.6rem;
-        color: v.$gris;
+        font-size: 1rem;
         max-width: 50rem;
         margin: 0 auto;
         line-height: 1.8;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #595959;
+        @include m.tablet{
+            font-size: 1.2rem;
+        }
+        margin-bottom: 4rem;
+    }
+    &__enlace{
+        letter-spacing: 1.8px;
+        color: v.$blanco;
+        font-size: 2.5rem;
+        padding: .8rem 6rem;
+        background-color: v.$beige;
+        @include m.tablet{
+            padding: 1rem 10rem;
+        }
     }
 }
