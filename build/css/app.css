@@ -316,7 +316,7 @@ p {
 }
 .bienvenida__contenido {
   position: relative;
-  padding: 10rem 0;
+  padding: 15rem 0;
 }
 @media (min-width: 768px) {
   .bienvenida__contenido {
@@ -373,6 +373,9 @@ p {
 
 /* Bienvenida
 ----------------------------------------------------------*/
+.servicios {
+  padding: 5rem 0;
+}
 .servicios__grid {
   width: 85%;
   margin: 0 auto;

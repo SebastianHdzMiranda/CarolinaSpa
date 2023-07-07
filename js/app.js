@@ -44,7 +44,8 @@ console.log(body);
 menu.addEventListener('click', mostrarMenu);
 
 function mostrarMenu(e) {
-  e.preventDefault();
+  // e.preventDefault();
+  scrollToTop();
   if (nav.classList.contains('navegacion--activo')) {
     nav.classList.remove('navegacion--activo');
     menu.classList.remove('is-active');
@@ -54,4 +55,12 @@ function mostrarMenu(e) {
     menu.classList.add('is-active');
     body.style.overflowY = 'hidden';
   }
+}
+
+function scrollToTop() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth' // para un scroll suave
+  });
 }
