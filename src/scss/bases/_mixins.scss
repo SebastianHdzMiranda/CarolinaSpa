@@ -21,22 +21,14 @@
 
 
 @mixin boton($bgColor, $colorTexto) {
-    background-color: $bgColor;
-    padding: 2rem 2rem;
-    color: $colorTexto;
+    letter-spacing: 1.8px;
     margin-top: 2rem;
-    font-size: 2.2rem;
-    font-weight: 400;
-    display: inline-block;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    transition: background-color;
-    transition-duration: 300ms;
+    font-size: 2.5rem;
+    padding: .8rem 6rem;
+    transition: all .3s ease;
+    background-color: $bgColor;
+    color: v.$blanco;
 
-    @include tablet {
-        width: auto;
-    }
     &:hover {
         background-color: darken($bgColor, 10%);
     }
@@ -48,7 +40,7 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 @mixin headingCursiva() {
-    color: v.$secundario;
+    color: v.$beige;
     font-family: v.$fuenteCursiva;
     line-height: .8;
     font-weight: 400;
@@ -61,7 +53,7 @@
         font-weight: 300;
         font-size: 4rem;
         font-family: v.$fuentePrincipal;
-        font-family: 'Marcellus SC', serif;
+        font-family: v.$fuenteHeading;
         text-transform: uppercase;
         color: initial;
     }

@@ -5,6 +5,9 @@
 ----------------------------------------------------------*/
 .servicios{
     padding: 5rem 0;
+    &__heading{
+        text-align: center;
+    }
     &__grid{
         width: 85%;
         margin: 0 auto;
@@ -48,7 +51,7 @@
         }
     }
     &__btn{
-        @include m.boton(v.$secundario, v.$blanco);
+        @include m.boton(v.$beige, v.$beige);
         display: block;
     }
 

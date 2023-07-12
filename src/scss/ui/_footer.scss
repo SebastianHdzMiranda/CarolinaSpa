@@ -22,7 +22,6 @@
     }
     &__heading{
         text-transform: uppercase;
-        font-weight: 400;
         font-size: 3.4rem;
     }
     &__texto{
@@ -34,12 +33,12 @@
 }
 .copyright{
     text-align: center;
-    border-top: 1px solid lighten(v.$gris, 25%);
+    border-top: 1px solid lighten(v.$beige, 10%);
     max-width: 96%;
     margin: 0 auto;
     &__texto{
         padding: 2rem;
-        color: v.$gris;
+        color: v.$beige;
         margin: 0;
         font-size: 1.6rem;
     }

@@ -6,23 +6,17 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
   
 body {
-    background-color: v.$grisClaro;
     font-family: v.$fuentePrincipal;
-    background-color: #fdfaf6;
+    background-color: v.$bgBody;
     font-size: 1.6rem;
-    // background-color: lighten( bisque, 7%);
     overflow-x: hidden;
-}
-
-p {
-    font-size: 2rem;
-    font-family: 'Cormorant Garamond', serif;
 }
 [class$="contenedor"],
 .contenedor {

@@ -18,14 +18,13 @@
     &__heading{
         text-transform: uppercase;
         font-size: 5rem;
-        font-weight: 400;
         @include m.tablet{
             font-size: 6rem;
         }
     }
     &__texto{
         line-height: 2;
-        margin: 0 auto;
+        margin: 0 auto 3rem 0;
         width: 95%;
         @include m.tablet{
             width: 60rem;
@@ -33,7 +32,7 @@
         }
     }
     &__btn{
-        @include m.boton(v.$primario, v.$blanco);
+        @include m.boton(v.$beige, v.$blanco);
         padding-inline: 10rem;
     }
 

@@ -1,5 +1,7 @@
 // Swiper BASES
 
+// const { document } = require("postcss");
+
 // window.swiper = new Swiper({
 //     el: '.slider__list', //contenedor del slider
 //     slideClass: 'slider__item', //elemento de cada slide sin '.'
@@ -30,37 +32,3 @@ var swiper = new Swiper(".mySwiper", {
     //     delay: 3000,
     // },
 });
-
-
-const menu  = document.querySelector('#menu');
-console.log(menu);
-
-const nav = document.querySelector('.navegacion')
-console.log(nav);
-
-const body = document.querySelector('body')
-console.log(body);
-
-menu.addEventListener('click', mostrarMenu);
-
-function mostrarMenu(e) {
-  // e.preventDefault();
-  scrollToTop();
-  if (nav.classList.contains('navegacion--activo')) {
-    nav.classList.remove('navegacion--activo');
-    menu.classList.remove('is-active');
-    body.style.overflowY = 'auto';
-  } else{
-    nav.classList.add('navegacion--activo');
-    menu.classList.add('is-active');
-    body.style.overflowY = 'hidden';
-  }
-}
-
-function scrollToTop() {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: 'smooth' // para un scroll suave
-  });
-}
