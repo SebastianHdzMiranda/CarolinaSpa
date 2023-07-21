@@ -50,11 +50,9 @@
 
     >* {
         display: block;
-        font-weight: 300;
         font-size: 4rem;
-        font-family: v.$fuentePrincipal;
-        font-family: v.$fuenteHeading;
         text-transform: uppercase;
         color: initial;
+        font-family: v.$fuenteHeading;
     }
 }

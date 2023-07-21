@@ -22,9 +22,12 @@
     @include m.tablet{
         height: unset;
         flex-direction: row;
-        gap: 2.5rem;
+        gap: 2rem;
         position: unset;
         opacity: 1;
+    }
+    @include m.desktop{
+        gap: 2.5rem;
     }
     &__enlace{
         font-size: 3rem;
