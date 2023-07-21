@@ -45,7 +45,7 @@ ul {
 h1, h2, h3 {
   margin: 0;
   line-height: 1.5;
-  font-family: "mencken-std", sans-serif;
+  font-family: "Forum", cursive;
   font-weight: 400;
 }
 
@@ -168,7 +168,7 @@ p {
   .navegacion__enlace {
     font-size: 1.8rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
   }
 }
 .navegacion__enlace--activo {
@@ -183,7 +183,7 @@ p {
   }
 }
 .navegacion__enlace:last-of-type {
-  letter-spacing: 1.8px;
+  letter-spacing: 2px;
   color: #d2bab2;
   font-size: 3rem;
   border-bottom: 1px solid #c9aca2;
@@ -292,6 +292,7 @@ p {
   }
 }
 .bienvenida__heading {
+  text-transform: uppercase;
   line-height: 1.3;
   margin-bottom: 1rem;
   font-size: 4rem;
@@ -338,6 +339,28 @@ p {
 }
 .servicios__heading {
   text-align: center;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .servicios__heading {
+    font-size: 5rem;
+  }
+}
+.servicios .servicios__texto {
+  text-align: center;
+  color: #c9aca2;
+  text-transform: uppercase;
+  margin-bottom: 7rem;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .servicios .servicios__texto {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+  }
 }
 .servicios__grid {
   width: 85%;
@@ -420,7 +443,7 @@ p {
   font-size: 4rem;
   text-transform: uppercase;
   color: initial;
-  font-family: "mencken-std", sans-serif;
+  font-family: "Forum", cursive;
 }
 .card__span {
   font-size: 2.5rem;
@@ -532,7 +555,7 @@ p {
   font-size: 4rem;
   text-transform: uppercase;
   color: initial;
-  font-family: "mencken-std", sans-serif;
+  font-family: "Forum", cursive;
 }
 .productos__grid {
   display: grid;
@@ -615,7 +638,7 @@ p {
 }
 .cita__texto {
   line-height: 2;
-  margin: 0 auto 3rem 0;
+  margin: 0 auto 3rem auto;
   width: 95%;
 }
 @media (min-width: 768px) {

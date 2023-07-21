@@ -36,7 +36,7 @@
         @include m.tablet{
             font-size: 1.8rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;  
+            letter-spacing: 2px;  
         }
 
         &--activo{
@@ -49,7 +49,7 @@
             }
         }
         &:last-of-type{
-            letter-spacing: 1.8px;
+            letter-spacing: 2px;
             color: lighten(v.$beige, 5%);
             font-size: 3rem;
             border-bottom: 1px solid v.$beige;

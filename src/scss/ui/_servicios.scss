@@ -7,6 +7,24 @@
     padding: 5rem 0;
     &__heading{
         text-align: center;
+        font-size: 3.5rem;
+        line-height: 1;
+        @include m.tablet{
+            font-size: 5rem;
+        }
+    }
+    .servicios__texto{
+        text-align: center;
+        color: v.$beige;
+        text-transform: uppercase;
+        margin-bottom: 7rem;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        @include m.tablet{
+            font-size: 2rem;
+            margin-bottom: 10rem;
+        }
     }
     &__grid{
         width: 85%;
