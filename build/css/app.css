@@ -210,11 +210,32 @@ p {
   opacity: 1;
 }
 
+.testimoniales {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimoniales {
+    margin-bottom: 8rem;
+  }
+}
+.testimoniales__heading {
+  color: #c9aca2;
+  line-height: 1;
+}
+
+.swiper {
+  width: 85%;
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   .swiper {
-    width: 96%;
-    max-width: 96%;
-    margin: 0 auto;
+    width: 82%;
+  }
+}
+@media (min-width: 1440px) {
+  .swiper {
+    width: 110rem;
   }
 }
 .swiper .swiper-wrapper {
@@ -227,36 +248,55 @@ p {
 }
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
-  display: none;
-}
-@media (min-width: 768px) {
-  .swiper .swiper-button-prev::after,
-  .swiper .swiper-button-next::after {
-    color: #FFFFFF;
-    display: inline-block;
-    font-size: 3rem;
-  }
+  color: #000;
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #595959;
 }
 .swiper .swiper-pagination-bullet {
   background-color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  .swiper .swiper-pagination-bullet {
-    display: none;
-  }
+  display: none;
 }
 .swiper .swiper-pagination-bullet-active {
   background-color: #FFFFFF;
 }
-.swiper .swiper-img {
-  min-height: 23rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+.swiper .swiper-slide {
+  background-color: #fdfaf6;
+  height: 290px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 768px) {
-  .swiper .swiper-img {
-    min-height: unset;
+  .swiper .swiper-slide {
+    height: 18rem;
   }
+}
+.swiper .swiper-contenedor {
+  text-align: center;
+}
+.swiper .swiper-button-next {
+  top: 15px;
+}
+@media (min-width: 1024px) {
+  .swiper .swiper-button-next {
+    right: 50px;
+  }
+}
+.swiper .swiper-button-prev {
+  top: 15px;
+  left: unset;
+  right: 40px;
+}
+@media (min-width: 1024px) {
+  .swiper .swiper-button-prev {
+    right: 80px;
+  }
+}
+.swiper .swiper-text {
+  color: #595959;
+  line-height: 1.5;
 }
 
 /* Bienvenida
@@ -335,7 +375,7 @@ p {
 /* Bienvenida
 ----------------------------------------------------------*/
 .servicios {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem 0;
 }
 .servicios__heading {
   text-align: center;

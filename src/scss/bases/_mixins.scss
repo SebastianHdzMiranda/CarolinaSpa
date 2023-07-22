@@ -18,6 +18,11 @@
         @content;
     }
 }
+@mixin escritorio {
+    @media (min-width: v.$escritorio) {
+        @content;
+    }
+}
 
 
 @mixin boton($bgColor, $colorTexto) {

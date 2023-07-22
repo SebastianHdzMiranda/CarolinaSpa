@@ -1,12 +1,32 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
+.testimoniales{
+    margin-bottom: 5rem;
+    text-align: center;
+    @include m.tablet{
+        margin-bottom: 8rem;
+    }
+    &__heading{
+        color: v.$beige;
+        line-height: 1;
+        width: 85%;
+    margin: 0 auto;
+    @include m.tablet{
+        width: 82%;
+    }
+    }
+}
+
 
 .swiper{
+    width: 85%;
+    margin: 0 auto;
     @include m.tablet{
-        width: 96%;
-        max-width: 96%;
-        margin: 0 auto;
+        width: 82%;
+    }
+    @include m.escritorio{
+        width: 110rem;
     }
     .swiper-wrapper{
         cursor: grab;
@@ -16,29 +36,57 @@
     }
     .swiper-button-prev::after,
     .swiper-button-next::after {
-        display: none;
-        @include m.tablet {
-            color: v.$blanco;
+        // display: none;
+        // @include m.tablet {
+            color: v.$negro;
             display: inline-block;
-            font-size: 3rem;
-        }
+            font-size: 1.8rem;
+            color: lighten(v.$negro, 35%);
+        // }
     }
     .swiper-pagination-bullet {
         background-color: v.$blanco;
 
+        display: none;
         @include m.tablet {
-            display: none;
         }
     }
 
     .swiper-pagination-bullet-active {
         background-color: v.$blanco;
     }
-    .swiper-img{
-        min-height: 23rem;
-        object-fit: cover;
+    .swiper-slide{
+        background-color: v.$bgBody;
+        height: 290px;
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include m.tablet{
-            min-height: unset;
+            height: 18rem;
         }
+    }
+    .swiper-contenedor{
+        text-align: center;
+        // background-color: v.$bgBody;
+        // height: 30rem;
+    }
+    .swiper-button-next{
+        top: 15px;
+        @include m.desktop{
+            right: 50px;
+        }
+    }
+    .swiper-button-prev{
+        top: 15px;
+        left: unset;
+        right: 40px;
+        @include m.desktop{
+            right: 80px;
+        }
+    }
+    .swiper-text{
+        color: lighten(v.$negro, 35%);
+        line-height: 1.5;
     }
 }
