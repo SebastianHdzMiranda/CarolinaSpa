@@ -13,7 +13,7 @@
 
     &__info{
         background-color: v.$beige;
-        padding: 2rem;
+        padding: 3rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -25,6 +25,7 @@
     }
     &__heading{
         text-transform: uppercase;
+        text-align: center;
     }
     &__descripcion{
         text-align: center;
@@ -32,17 +33,29 @@
         line-height: 2;
     }
     &__img{
+        // display: none;
         height: 35rem;
-        background-image: url(../img/bg_horarios.jpg);
+        background-image: url(../img/salon.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right center;
+        position: relative;
         @include m.tablet{
+            display: block;
             height: auto;
-            background-position: -130rem center;
+            background-position: center;
         }
         @include m.desktop{
             background-position: right center;
+            height: 60rem;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(253, 250, 246, 0.1882352941);
+            position: absolute;
         }
     }
 }

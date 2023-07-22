@@ -1,0 +1,25 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.reserva{
+    background-color: #5e756e;
+    .reserva__contenido{
+        min-height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .reserva__heading{
+        margin: 0;
+        text-align: center;
+        color: v.$blanco;
+        font-size: 4rem;
+        @include m.tablet{
+            font-size: 6rem;
+        }
+    }
+    &__enlace{
+        @include m.boton(v.$beige, v.$blanco);
+    }
+}
