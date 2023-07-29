@@ -2,11 +2,8 @@
 @use 'bases/mixins' as m;
 
 .galeria{
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
-    @include m.tablet{
-        width: 90%
-    }
 
     &__grid{
         @include m.grid(2, .1rem);
@@ -16,9 +13,6 @@
         @include m.desktop{
             @include m.grid(6, 0);
         }
-    }
-    &__imgContainer{
-
     }
     &__img{
         height: 16rem;

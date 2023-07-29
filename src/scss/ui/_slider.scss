@@ -31,17 +31,13 @@
     }
     .swiper-button-prev::after,
     .swiper-button-next::after {
-        // display: none;
-        // @include m.tablet {
-            color: v.$negro;
-            display: inline-block;
-            font-size: 1.8rem;
-            color: lighten(v.$negro, 35%);
-        // }
+        color: v.$negro;
+        display: inline-block;
+        font-size: 1.8rem;
+        color: lighten(v.$negro, 35%);
     }
     .swiper-pagination-bullet {
         background-color: v.$blanco;
-
         display: none;
         @include m.tablet {
         }
@@ -63,8 +59,6 @@
     }
     .swiper-contenedor{
         text-align: center;
-        // background-color: v.$bgBody;
-        // height: 30rem;
     }
     .swiper-button-next{
         top: 15px;

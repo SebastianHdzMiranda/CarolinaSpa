@@ -3,14 +3,14 @@
 
 .reserva{
     background-color: #5e756e;
-    .reserva__contenido{
+    &__contenido{
         min-height: 35rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .reserva__heading{
+    &__heading{
         margin: 0;
         text-align: center;
         color: v.$blanco;

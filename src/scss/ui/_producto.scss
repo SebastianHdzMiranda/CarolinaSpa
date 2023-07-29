@@ -4,10 +4,10 @@
 /* Productos
 ----------------------------------------------------------*/
 .productos{
-    padding: 5rem 0;
+    padding: 7rem 0;
     @include m.tablet{
         width: 90%;
-        padding: 8rem 0;
+        padding: 8rem 0 ;
     }
     @include m.desktop{
         width: 80%;
@@ -16,6 +16,7 @@
     &__heading{
         text-align: center;
         line-height: 1;
+        margin-top: 0;
     }
     &__texto{
         text-align: center;
