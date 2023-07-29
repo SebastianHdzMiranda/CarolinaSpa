@@ -4,10 +4,13 @@
 /* Footer
 ----------------------------------------------------------*/
 .footer{
+    background-color: v.$beige;
+    color: v.$blanco;
     &__grid{
         padding: 5rem 0 2rem 0;
         @include m.tablet{
-            @include m.grid(3, 2rem);
+            @include m.grid(2, 2rem);
+            width: 60%;
         }
     }
     &__seccion{
@@ -38,7 +41,6 @@
     margin: 0 auto;
     &__texto{
         padding: 2rem;
-        color: v.$beige;
         margin: 0;
         font-size: 1.6rem;
     }

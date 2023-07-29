@@ -5,6 +5,9 @@
 ----------------------------------------------------------*/
 .servicios{
     padding: 5rem 0 2rem 0;
+    @include m.tablet{
+        padding: 8rem 0 4rem 0;
+    }
     &__heading{
         text-align: center;
         line-height: 1;

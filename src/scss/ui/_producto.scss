@@ -4,8 +4,10 @@
 /* Productos
 ----------------------------------------------------------*/
 .productos{
+    padding: 5rem 0;
     @include m.tablet{
         width: 90%;
+        padding: 8rem 0;
     }
     @include m.desktop{
         width: 80%;
@@ -29,7 +31,7 @@
         }
     }
     &__grid{
-        @include m.grid(2, 2rem);
+        @include m.grid(2, 1rem);
         @include m.tablet{
             @include m.grid(2, 2rem);
         }
