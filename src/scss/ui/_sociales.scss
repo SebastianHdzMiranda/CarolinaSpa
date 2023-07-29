@@ -7,11 +7,11 @@
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: .5rem;
+    gap: 1.7rem;
     &__enlace{
         &::before{
             content: '';
-            padding: 1.8rem;
+            padding: 1.5rem;
             display: inline-block;
         }
         
