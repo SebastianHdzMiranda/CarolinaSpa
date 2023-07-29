@@ -13,7 +13,20 @@
 
     &__heading{
         text-align: center;
-        @include m.headingCursiva;
+        line-height: 1;
+    }
+    &__texto{
+        text-align: center;
+        color: v.$beige;
+        text-transform: uppercase;
+        margin-bottom: 7rem;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        @include m.desktop{
+            font-size: 1.7rem;
+            margin-bottom: 10rem;
+        }
     }
     &__grid{
         @include m.grid(2, 2rem);
@@ -33,6 +46,11 @@
         // transition: all .25s ease;
         transition-property: transform;
         transition-duration: 250ms;
+        height: 15rem;
+        object-fit: cover;
+        @include m.tablet{
+            height: unset;
+        }
         &:hover{
             transform: scale(1.2);
         }
@@ -42,22 +60,21 @@
         padding: 2rem;
     }
     &__heading{
-        text-transform: uppercase;
         color: v.$beige;
         text-align: center;
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 2.6rem;
         @include m.tablet{
-            font-size: 2.4rem;
+            font-size: 3rem;
         }
     }
     &__description{
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 1.8;
         text-align: center;
         @include m.tablet{
-            font-size: 1.6rem;
+            font-size: 1.5rem;
         }
     }
     &__precio{

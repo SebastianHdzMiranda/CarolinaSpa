@@ -7,11 +7,7 @@
     padding: 5rem 0 2rem 0;
     &__heading{
         text-align: center;
-        font-size: 3.5rem;
         line-height: 1;
-        @include m.tablet{
-            font-size: 5rem;
-        }
     }
     .servicios__texto{
         text-align: center;
@@ -21,8 +17,8 @@
         letter-spacing: 2px;
         font-size: 1.5rem;
         line-height: 1.5;
-        @include m.tablet{
-            font-size: 2rem;
+        @include m.desktop{
+            font-size: 1.7rem;
             margin-bottom: 10rem;
         }
     }

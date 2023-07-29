@@ -11,7 +11,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 85px;
+    top: 84px;
     bottom: 0;
     z-index: 3;
     height: 0;
@@ -34,9 +34,12 @@
         color: lighten(v.$negro, 35%); 
         padding-bottom: .3rem;
         @include m.tablet{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;  
+        }
+        @include m.desktop{
+            font-size: 1.6rem;
         }
 
         &--activo{
@@ -49,7 +52,7 @@
             }
         }
         &:last-of-type{
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             color: lighten(v.$beige, 5%);
             font-size: 3rem;
             border-bottom: 1px solid v.$beige;
@@ -65,14 +68,17 @@
 
             @include m.tablet{
                 position: unset;
-                font-size: 2rem;
+                font-size: 1.75rem;
                 padding: 1.3rem 2rem;
                 margin-left: 1rem;
+            }
+            @include m.desktop{
+                font-size: 1.8rem;
             }
         }
     }
     &--activo{
-        height: calc(100% - 85px);
+        height: calc(100% - 84px);
         opacity: 1;
     }
 }
