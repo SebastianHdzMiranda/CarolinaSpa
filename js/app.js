@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
     entries.forEach(entry => {
 
       if(entry.isIntersecting) {
-        entry.target.style.animation = `anim1 1.5s forwards ease-out`;
+        entry.target.style.animation = `anim1 1s forwards ease-out`;
         
         if (entry.target.classList.contains('testimoniales')) {
-          entry.target.style.animation = `anim2 1.2s forwards ease-out`;
+          entry.target.style.animation = `anim2 1s forwards ease-out`;
         }
       } else {
         entry.target.style.animation = 'none';

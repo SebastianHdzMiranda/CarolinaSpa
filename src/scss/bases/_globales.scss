@@ -47,9 +47,14 @@ ul {
         opacity: 1;
     }
 }
+
+.anim {
+    opacity: 0;
+}
+
 @keyframes anim2 {
     from {
-        transform: translateY(-40px);
+        transform: translateY(-35px);
         opacity: 0;
 
     }
