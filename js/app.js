@@ -32,3 +32,31 @@ var swiper = new Swiper(".mySwiper", {
     //     delay: 3000,
     // },
 });
+
+
+
+
+
+
+
+const animaciones = document.querySelectorAll('.anim');
+
+
+document.addEventListener('DOMContentLoaded', ()=> {
+  const observer = new IntersectionObserver( entries => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting) {
+        entry.target.style.animation = `anim1 1.5s forwards ease-out`;
+        
+        if (entry.target.classList.contains('testimoniales')) {
+          entry.target.style.animation = `anim2 1.2s forwards ease-out`;
+        }
+      } else {
+        entry.target.style.animation = 'none';
+      }
+    })
+  })
+  animaciones.forEach( animacion => observer.observe(animacion) )
+});
