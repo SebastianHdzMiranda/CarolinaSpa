@@ -1,0 +1,53 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.anuncio {
+    background-color: v.$beige;
+    margin: 0;
+    text-align: center;
+    color: v.$blanco;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    letter-spacing: .3px;
+}
+
+.banner {
+    position: relative;
+    .banner__img{
+        // background-image: url(../img/service-nails2.jpg);
+        background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/service-nails2.jpg);
+        // height: 60rem;
+        // height: 0;
+        padding-bottom: 120%;
+        background-size: cover;
+        background-position: 70% center;
+
+
+        
+        @include m.telefono{
+            padding-bottom: 60%;
+            background-position: right 39%;
+        }
+        @include m.desktop{
+            min-height: 50rem;
+            padding-bottom: 35%;
+        }
+    }
+    &__heading{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 4rem;
+        color: v.$blanco;
+        right: 0;
+        left: 0;
+        text-align: center;
+        font-size: 4rem;
+
+        @include m.tablet {
+            font-size: 6rem;
+        }
+        @include m.desktop {
+            font-size: 8rem;
+        }
+    }
+}
