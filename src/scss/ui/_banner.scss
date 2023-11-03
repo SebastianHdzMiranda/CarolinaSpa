@@ -9,12 +9,24 @@
     font-size: 1.5rem;
     padding: 1.2rem;
     letter-spacing: .3px;
+    @include m.desktop {
+        font-size: 1.7rem;
+    }
 }
 
 .banner {
     position: relative;
     .banner__img{
-        background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/manicure-banner.avif);
+        &--uñas{
+            // background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/manicure-banner.avif);
+            background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/manicure-banner2.jpg);
+        }
+        &--pestañas{
+            background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/eyelash-banner.avif);
+        }
+        &--eyebrows{
+            background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/eyebrows-banner.avif);
+        }
         padding-bottom: 120%;
         background-size: cover;
         background-position: 70% center;
@@ -27,7 +39,7 @@
         }
         @include m.desktop{
             min-height: 50rem;
-            padding-bottom: 35%;
+            padding-bottom: 37%;
         }
     }
     &__heading{
