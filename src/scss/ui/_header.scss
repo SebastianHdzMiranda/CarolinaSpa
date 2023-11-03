@@ -25,11 +25,14 @@
         width: 6rem;
         display: inline;
         @include m.tablet{
-            width: 8rem;
+            width: 7rem;
             padding-bottom: 3rem;
             margin: 0 auto;
             padding-bottom: unset;
             display: block;
+        }
+        @include m.desktop {
+            width: 8rem;
         }
     }
     &__iconMenu{

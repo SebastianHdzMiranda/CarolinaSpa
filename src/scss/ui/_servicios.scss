@@ -50,10 +50,10 @@
         position: relative;
         transition-property: rotate scale;
         transition-duration: 300ms;
-        height: 30rem;
-        @include m.desktop{
-            height: 45rem;
-        }
+        // height: 30rem;
+        // padding-bottom: 100%;
+        aspect-ratio: 1/1;
+        
         &:hover{
             transform: scale(1.1) rotate(7deg);
         }
@@ -67,14 +67,14 @@
         }
         &--1{
             background-image: url(../img/servicio_1.jpg);
-
+        
         }
         &--2{
             background-image: url(../img/servicio_2.jpg);
         }
         &--3{
             background-image: url(../img/servicio_3.png);
-
+        
         }
 
     }
@@ -102,3 +102,8 @@
     }
 
 }
+
+
+
+
+
