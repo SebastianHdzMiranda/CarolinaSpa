@@ -14,10 +14,7 @@
 .banner {
     position: relative;
     .banner__img{
-        // background-image: url(../img/service-nails2.jpg);
-        background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/service-nails2.jpg);
-        // height: 60rem;
-        // height: 0;
+        background-image: linear-gradient(to top, transparentize(v.$beige, .2) 0%, transparentize(v.$negro, 1) 100%), url(../img/manicure-banner.avif);
         padding-bottom: 120%;
         background-size: cover;
         background-position: 70% center;
