@@ -1,0 +1,78 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.nosotros {
+    margin-block: 8rem;
+    text-align: center;
+    width: 75%;
+    @include m.desktop{
+        width: 85rem;
+
+    }
+    &__heading{
+        text-align: center;
+        line-height: 1;
+    }
+    &__subHeading{
+        margin-bottom: 4rem;
+        text-align: center;
+        color: v.$beige;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        font-size: 2rem;
+        line-height: 1.5;
+        @include m.desktop{
+        }
+    }
+    .nosotros__texto{
+        line-height: 2;
+    }
+    .nosotros__img{
+        margin-top: 4rem;
+        img{
+            margin: 0 auto;
+            width: 25rem;
+            border: 2rem solid v.$blanco;
+            transform: rotate(-6deg);
+            box-shadow: 7px 7px 9px -5px rgba(0,0,0,0.39);
+            object-fit: cover;
+        }
+    }
+}
+
+.content{
+    background-color: #5e756e;
+    &__contenido{
+        width: 75%;
+        min-height: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-block: 4rem;
+    }
+    &__texto {
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+
+    }
+    &__heading{
+        margin: 0;
+        text-align: center;
+        color: v.$blanco;
+        font-size: 4rem;
+        @include m.tablet{
+            font-size: 5rem;
+        }
+        @include m.desktop{
+            font-size: 5.5rem;
+        }
+    }
+    &__enlace{
+        @include m.boton(v.$blanco, v.$blanco);
+        color: v.$negro;
+    }
+}

@@ -17,6 +17,17 @@
 .banner {
     position: relative;
     .banner__img{
+        padding-bottom: 120%;
+        background-size: cover;
+        background-position: 70% center;
+        @include m.telefono{
+            padding-bottom: 60%;
+            background-position: right 39%;
+        }
+        @include m.desktop{
+            min-height: 50rem;
+            padding-bottom: 37%;
+        }
         &--uñas{
             background-image: linear-gradient(to top, transparentize(v.$beige, .3) 0%, transparentize(v.$negro, 1) 100%), url(../img/manicure-banner2.jpg);
             // background-image:url(../img/manicure-banner2.jpg);
@@ -27,20 +38,13 @@
         &--eyebrows{
             background-image: linear-gradient(to top, transparentize(v.$beige, .3) 0%, transparentize(v.$negro, 1) 100%), url(../img/eyebrows-banner.avif);
         }
-        padding-bottom: 120%;
-        background-size: cover;
-        background-position: 70% center;
-
+        &--nosotros {
+            background-image: linear-gradient(to top, transparentize(v.$beige, .3) 0%, transparentize(v.$negro, 1) 100%), url(../img/salon.jpg);
+        }
+        
+        
 
         
-        @include m.telefono{
-            padding-bottom: 60%;
-            background-position: right 39%;
-        }
-        @include m.desktop{
-            min-height: 50rem;
-            padding-bottom: 37%;
-        }
     }
     &__heading{
         position: absolute;

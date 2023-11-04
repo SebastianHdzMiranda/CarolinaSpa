@@ -10,6 +10,7 @@ const enlaces = {
     servicios: 'Servicios',
     productos: 'Productos',
     reservar: 'Reservar',
+    home: 'Home',
 }
 
 // events
@@ -31,7 +32,7 @@ function mostrarMenu(e) {
 }
 
 function ocultarMenu(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const enlace = e.target;
     if (enlace.classList.contains('navegacion__enlace')) {
         
@@ -41,14 +42,23 @@ function ocultarMenu(e) {
             body.style.overflowY = 'auto';
             
         } 
+        if(enlace.textContent.trim() === enlaces.home) {
+          window.location.href = 'index.html';
+        }
         if(enlace.textContent.trim() === enlaces.servicios) {
-            servicios.scrollIntoView({ behavior: 'smooth' });
+            if(window.location.pathname === '/index.html'){
+              servicios.scrollIntoView({ behavior: 'smooth' });
+            } else {
+
+            }
         }
         if(enlace.textContent.trim() === enlaces.nosotros) {
-            window.location.href = 'https://www.youtube.com/';
+            window.location.href = 'nosotros.html';
         }
         if(enlace.textContent.trim() === enlaces.productos) {
+          if(window.location.pathname === '/index.html'){
             productos.scrollIntoView({ behavior: 'smooth' });
+          }
         }
     }
 }
