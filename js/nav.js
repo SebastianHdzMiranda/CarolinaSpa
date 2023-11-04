@@ -42,24 +42,24 @@ function ocultarMenu(e) {
             body.style.overflowY = 'auto';
             
         } 
-        if(enlace.textContent.trim() === enlaces.home) {
-          window.location.href = 'index.html';
-        }
-        if(enlace.textContent.trim() === enlaces.servicios) {
-            if(window.location.pathname === '/index.html'){
-              servicios.scrollIntoView({ behavior: 'smooth' });
-            } else {
+        // if(enlace.textContent.trim() === enlaces.home) {
+        //   window.location.href = 'index.html';
+        // }
+        // if(enlace.textContent.trim() === enlaces.servicios) {
+        //     if(window.location.pathname === '/index.html'){
+        //       servicios.scrollIntoView({ behavior: 'smooth' });
+        //     } else {
 
-            }
-        }
-        if(enlace.textContent.trim() === enlaces.nosotros) {
-            window.location.href = 'nosotros.html';
-        }
-        if(enlace.textContent.trim() === enlaces.productos) {
-          if(window.location.pathname === '/index.html'){
-            productos.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
+        //     }
+        // }
+        // if(enlace.textContent.trim() === enlaces.nosotros) {
+        //     window.location.href = 'nosotros.html';
+        // }
+        // if(enlace.textContent.trim() === enlaces.productos) {
+        //   if(window.location.pathname === '/index.html'){
+        //     productos.scrollIntoView({ behavior: 'smooth' });
+        //   }
+        // }
     }
 }
 
