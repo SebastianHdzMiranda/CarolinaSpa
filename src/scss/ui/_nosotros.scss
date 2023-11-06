@@ -33,9 +33,9 @@
         img{
             margin: 0 auto;
             width: 25rem;
-            border: 2rem solid v.$blanco;
+            border: 2rem solid v.$bgBody;
             transform: rotate(-6deg);
-            box-shadow: 7px 7px 9px -5px rgba(0,0,0,0.39);
+            box-shadow: 7px 7px 9px -9px rgba(0,0,0,0.39);
             object-fit: cover;
         }
     }
