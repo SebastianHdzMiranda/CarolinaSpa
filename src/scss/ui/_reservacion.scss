@@ -1,7 +1,68 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
-.reservacion{
-    margin-bottom: 3rem;
-    
+
+.contacto{
+    margin-block: 5rem;
+
+    @include m.tablet {
+
+        max-width: 60%;
+    }
+
+    .boton{
+        width: 100%;
+        border: none;
+        padding: 1rem;
+        font-weight: 700;
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    form{
+        .error{
+        width: 100%;
+        padding: 1rem;
+        background-color: red;
+        font-weight: 700;
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: center;
+        }
+
+        .valida{
+            width: 100%;
+            padding: 1rem;
+            background-color: green;
+            font-weight: 700;
+            color: v.$blanco;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .boton {
+            background-color: v.$beige;
+        }
+    }
+}
+.campo{
+    margin-bottom: 2rem;
+    label{
+        display: block;
+        margin-bottom: .5rem;
+        font-size: 2.2rem;
+        // font-weight: 700;
+        text-transform: uppercase;
+    }
+    input{
+        padding: 1rem;
+        width: 100%;
+        border: 5px solid v.$beige;
+        &:focus {
+            overflow: none;
+            outline: none;
+        }
+    }
 }
