@@ -48,9 +48,9 @@ function versionAvif() {
 
 function dev() {
     watch( 'src/scss/**/*.scss', css );
-    watch( 'src/img/**/*', imagenes );
-    watch( 'src/img/**/*', versionAvif );
-    watch( 'src/img/**/*', versionWebp );
+    // watch( 'src/img/**/*', imagenes );
+    // watch( 'src/img/**/*', versionAvif );
+    // watch( 'src/img/**/*', versionWebp );
 }
 
 

@@ -3,12 +3,12 @@ const menu  = document.querySelector('#menu');
 const nav = document.querySelector('.navegacion')
 const body = document.querySelector('body')
 const servicios = document.querySelector('#servicios');
-const productos = document.querySelector('#productos');
+// const productos = document.querySelector('#productos');
 
 const enlaces = {
     nosotros: 'Nosotros',
     servicios: 'Servicios',
-    productos: 'Productos',
+    // productos: 'Productos',
     reservar: 'Reservar',
     home: 'Home',
 }
